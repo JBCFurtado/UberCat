@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
         }
       },
       child: Scaffold(
-        backgroundColor: Colors.blueGrey[800],
+         backgroundColor: Colors.yellow[800],
         body: SingleChildScrollView(
           child: Center(
             child: SizedBox(
@@ -32,22 +32,30 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(
-                    Icons.forum,
-                    size: 80,
-                    color: Colors.white,
-                  ),
+                  Icons.forum,
+                  //Icons.ac_unit,
+                  //Icons.filter_vintage,
+                  size: 90,
+                  color: Colors.cyan[900],
+                ),
                   Text(
-                    'UberCat',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 42,
-                    ),
+                  'UberCat',
+                  style: TextStyle(
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(0.0, 1.0),
+                        blurRadius: 3.0,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                      ),
+                      
+                    ],
+                    color: Colors.cyan[900],
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
                   ),
+                ),
                   SizedBox(
-                    height: 40,
-                  ),
-                  SizedBox(
-                    width: 300,
+                    width: 350,
                     child: Form(
                       key: _formKey,
                       child: TextFormField(
@@ -61,7 +69,7 @@ class Login extends StatelessWidget {
                         decoration: InputDecoration(
                           hintText: 'Informe seu nome',
                           filled: true,
-                          fillColor: Colors.white,
+                          fillColor: Colors.white70,
                           suffixIcon: Icon(Icons.account_box),
                           errorStyle: TextStyle(
                             fontSize: 18,
@@ -71,7 +79,7 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 12,
+                    height: 18,
                   ),
                   RaisedButton(
                     onPressed: () {
@@ -87,7 +95,8 @@ class Login extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    color: Colors.blueGrey[900],
+                    elevation: 15.0,
+                    color: Colors.cyan[900],
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[

@@ -37,7 +37,7 @@ class Chat extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                child: Container(color: Colors.yellow[600],), 
+                child: Container(color: Colors.yellow[700],), 
                 // Cor do Background da tela Chat
               ),
             widgetEnviar(),

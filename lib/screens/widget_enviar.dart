@@ -4,7 +4,7 @@ Widget widgetEnviar() {
   final _controll = TextEditingController();
   return Container(
     padding: EdgeInsets.all(20),
-    color: Colors.yellow[600], // Borda da caixa de mensagem
+    color: Colors.yellow[700], // Borda da caixa de mensagem
     child: Row(
       children: [
         Expanded(

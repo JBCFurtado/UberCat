@@ -32,14 +32,14 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(
-                  Icons.forum,
+                  Icons.fingerprint,
                   //Icons.ac_unit,
                   //Icons.filter_vintage,
                   size: 90,
                   color: Colors.cyan[900],
                 ),
                   Text(
-                  'UberCat',
+                  'The Intercep_',
                   style: TextStyle(
                     shadows: <Shadow>[
                       Shadow(
@@ -54,6 +54,25 @@ class Login extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+
+                Text(
+                  'Brasil',
+                  style: TextStyle(
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(0.0, 1.0),
+                        blurRadius: 3.0,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                      ),
+                      
+                    ],
+                    color: Colors.cyan[900],
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+
+
                   SizedBox(
                     width: 350,
                     child: Form(
@@ -111,7 +130,7 @@ class Login extends StatelessWidget {
                           width: 12,
                         ),
                         Icon(
-                          Icons.done,
+                          Icons.done_all,
                           color: Colors.white,
                         ),
                       ],

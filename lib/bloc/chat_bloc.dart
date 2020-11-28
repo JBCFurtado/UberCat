@@ -20,6 +20,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
 
   final IO.Socket _socket =
       IO.io('https://karlaycosta.com.br', <String, dynamic>{
+      //IO.io('https://linuxers.com.br', <String, dynamic>{
     'transports': ['websocket'],
   });
   ChatBloc() : super(ChatInitial()) {

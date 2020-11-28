@@ -17,6 +17,7 @@ class Chat extends StatelessWidget {
             buildWhen: (previousState, state) {
               return state is EstadoConectado || state is EstadoDesconectado;
             },
+            
             builder: (context, state) {
               return Text(_bloc.conectado ? _bloc.user.username : 'Desconectado');
             },

@@ -39,7 +39,7 @@ class Login extends StatelessWidget {
                   color: Colors.cyan[900],
                 ),
                   Text(
-                  'The Intercep_',
+                  'The Intercept_',
                   style: TextStyle(
                     shadows: <Shadow>[
                       Shadow(
@@ -127,12 +127,9 @@ class Login extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 12,
+                          width: 10,
                         ),
-                        Icon(
-                          Icons.done_all,
-                          color: Colors.white,
-                        ),
+                       
                       ],
                     ),
                   ),
@@ -142,13 +139,13 @@ class Login extends StatelessWidget {
                         state is EstadoDesconectado;
                   }, builder: (context, state) {
                     if (_bloc.conectado) {
-                      return Text('Conectado',
+                      return Text('...',
                           style: TextStyle(
-                              color: Colors.greenAccent, fontSize: 18));
+                              color: Colors.greenAccent, fontSize: 35));
                     }
-                    return Text('Desconectado',
+                    return Text('...',
                         style:
-                            TextStyle(color: Colors.redAccent, fontSize: 18));
+                            TextStyle(color: Colors.redAccent, fontSize: 35));
                   })
                 ],
               ),

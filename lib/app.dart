@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       create: (context) => ChatBloc(),
       child: MaterialApp(
         theme: ThemeData(
-          primarySwatch: Colors.cyan,
+          primarySwatch: Colors.amber, //Cor do AppBar
         ),
         debugShowCheckedModeBanner: false,
         routes: {
